@@ -1,1 +1,1 @@
-print("Hello World")
+from section03 import sec3
