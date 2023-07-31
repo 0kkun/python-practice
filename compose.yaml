@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  app:
+    container_name: ${PROJECT_NAME}_app
+    build:
+      context: .docker
+      dockerfile: Dockerfile
+    volumes:
+      - ./${SOURCE_DIR_NAME}:/app
+    tty: true
+    restart: always
+    env_file:
+      - .env
