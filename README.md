@@ -8,8 +8,8 @@
 
 |*Tool*|*Version*|
 |---|---|
-|pytohn|3.9|
-|docker|-|
+|pytohn|3.9.17|
+|docker|24.0.2|
 
 
 ## 環境構築手順
@@ -23,3 +23,9 @@ $ make env
 
 $ make init
 ```
+
+## 使い方
+
+1. main.pyに試したいコードを記述
+
+2. `$ make run` を実行

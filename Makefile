@@ -49,14 +49,14 @@ restart:
 	@make down
 	@make up
 
-.PHONY: app
-app:
-	$(DCE) $(BACKEND_SERVICE_NAME) bash
-
 
 # *****************************
 # *     Backend Controll    *
 # *****************************
+.PHONY: app
+app:
+	$(DCE) $(BACKEND_SERVICE_NAME) bash
+
 .PHONY: log
 log:
 	docker compose logs -f $(BACKEND_SERVICE_NAME)
@@ -64,3 +64,7 @@ log:
 .PHONY: format
 format:
 	$(DCE) $(BACKEND_SERVICE_NAME) bash -c "yapf -i -r ."
+
+.PHONY: run
+run:
+	$(DCE) $(BACKEND_SERVICE_NAME) bash -c "python main.py"
