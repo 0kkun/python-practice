@@ -72,3 +72,8 @@ run:
 .PHONY: debug
 debug:
 	$(DCE) $(BACKEND_SERVICE_NAME) bash -c "python main.py debug"
+
+# コンテナに何が入っているかバージョン付きで出力
+.PHONY: piplist
+debug:
+	$(DCE) $(BACKEND_SERVICE_NAME) bash -c "pip freeze > installed_libraries.txt"

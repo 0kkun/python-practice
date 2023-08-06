@@ -6,3 +6,4 @@ server/__pycache__
 server/*/__pycache__
 server/*/*/__pycache__
 server/*/*/*/__pycache__
+server/installed_libraries.txt
