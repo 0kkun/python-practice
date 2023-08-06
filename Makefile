@@ -68,3 +68,7 @@ format:
 .PHONY: run
 run:
 	$(DCE) $(BACKEND_SERVICE_NAME) bash -c "python main.py"
+
+.PHONY: debug
+debug:
+	$(DCE) $(BACKEND_SERVICE_NAME) bash -c "python main.py debug"

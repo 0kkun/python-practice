@@ -10,5 +10,7 @@ services:
       - ./${SOURCE_DIR_NAME}:/app
     tty: true
     restart: always
+    ports:
+      - ${APP_HOST_PORT}:5678
     env_file:
       - .env
