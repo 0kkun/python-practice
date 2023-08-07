@@ -1,6 +1,5 @@
 .DS_Store
 .env
-.vscode
 .idea
 server/__pycache__
 server/*/__pycache__
